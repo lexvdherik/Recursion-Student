@@ -24,7 +24,6 @@ public class DalendeRijen implements nl.hva.dmci.ict.se.datastructures.RijtjesCo
     @Override
     public <T extends Comparable<T>> boolean isStijgend(List<T> rijtje) {
         if (i < rijtje.size() - 1) {
-             System.out.println(rijtje.get(i) + "  " + rijtje.get(i+1) );
             if (rijtje.get(i).compareTo(rijtje.get(i+1)) == -1 || rijtje.get(i).compareTo(rijtje.get(i+1)) == 0) {
                 i++;
                 isStijgend(rijtje);
